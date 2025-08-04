@@ -1,0 +1,105 @@
+/* Import a professional font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Main container styles */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f7f6; /* A soft, light gray background */
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+}
+
+/* Card styles */
+.register-card {
+  width: 100%;
+  max-width: 450px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* A more subtle shadow */
+  padding: 40px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #0a66c2; /* LinkedIn's primary blue color */
+  margin-bottom: 0.5rem;
+}
+
+.card-subtitle {
+  font-size: 1rem;
+  color: #666666;
+  margin-bottom: 2rem;
+}
+
+/* Form group and input styles */
+.form-group {
+  margin-bottom: 1.25rem;
+  text-align: left;
+}
+
+.form-input {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid #dcdcdc; /* Lighter border color */
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.form-input::placeholder {
+  color: #999999;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #0a66c2;
+  box-shadow: 0 0 0 3px rgba(10, 102, 194, 0.2); /* Soft focus ring */
+}
+
+.form-textarea {
+  resize: vertical;
+}
+
+/* Button styles */
+.register-button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 25px; /* More modern, rounded button */
+  background-color: #009688;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  margin-bottom: 1rem;
+}
+
+.register-button:hover {
+  background-color: #009688;
+}
+
+/* Link styles */
+.login-link-text {
+  font-size: 0.9rem;
+  color: #666666;
+  margin-top: 1.5rem;
+}
+
+.login-link {
+  color: #009688;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}

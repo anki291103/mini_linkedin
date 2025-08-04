@@ -1,0 +1,108 @@
+/* Import the same font for consistency */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Main container and card styles */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f7f9; /* Pale sky blue from the chosen palette */
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px; /* Slightly narrower to suit the login form */
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 40px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 2rem; /* Slightly smaller for login page */
+  font-weight: 700;
+  color: #009688; /* Teal from the chosen palette */
+  margin-bottom: 0.5rem;
+}
+
+.card-subtitle {
+  font-size: 1rem;
+  color: #666666;
+  margin-bottom: 2rem;
+}
+
+/* Form group and input styles */
+.form-group {
+  margin-bottom: 1.25rem;
+  text-align: left;
+}
+
+.form-input {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+}
+
+.form-input::placeholder {
+  color: #999999;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #009688;
+  box-shadow: 0 0 0 3px rgba(0, 150, 136, 0.2);
+}
+
+/* Button styles */
+.login-button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 25px;
+  background-color: #009688;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  margin-bottom: 1.5rem;
+}
+
+.login-button:hover {
+  background-color: #00796b; /* Darker teal on hover */
+}
+
+/* Divider line */
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 1.5rem 0;
+}
+
+/* Link styles */
+.register-link-text {
+  font-size: 0.9rem;
+  color: #666666;
+  margin-top: 1.5rem;
+}
+
+.register-link {
+  color: #009688;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,306 @@
+/* Import the same professional font for consistency */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f7f9;
+  color: #313a46;
+}
+
+/* --- Global Elements & Layout --- */
+.home-page-container {
+  min-height: 100vh;
+}
+
+.main-content-wrapper {
+  padding: 2rem 1rem;
+}
+
+.content-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* --- Navbar --- */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1rem 0;
+}
+
+.navbar-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #23058f;
+  margin-right: 140px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #00796b;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-greeting {
+  font-size: 1rem;
+  color: #666666;
+}
+
+.profile-link {
+  font-weight: 600;
+  color: #009688;
+  text-decoration: none;
+  transition: text-decoration 0.2s ease;
+}
+
+.profile-link:hover {
+  text-decoration: underline;
+}
+
+/* --- Buttons & Inputs --- */
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.btn-primary {
+  background-color: #009688;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #00796b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #009688;
+  border-color: #009688;
+}
+
+.btn-outline:hover {
+  background-color: #009688;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-upload-input {
+  display: none;
+}
+
+.image-upload-label {
+  background-color: transparent;
+  color: #009688;
+  border: 1px solid #009688;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.image-upload-label:hover {
+  background-color: #f0f7f9;
+  border-color: #00796b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* --- Post Creation Card --- */
+.create-post-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.create-post-card .card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #313a46;
+  margin-bottom: 1.5rem;
+}
+
+.post-textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+  resize: vertical;
+}
+
+.post-textarea:focus {
+  outline: none;
+  border-color: #009688;
+  box-shadow: 0 0 0 3px rgba(0, 150, 136, 0.2);
+}
+
+.post-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* New styling for the image preview in the form */
+.post-image-preview {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.preview-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Public Feed Section --- */
+.feed-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #313a46;
+  margin-bottom: 1.5rem;
+}
+
+.post-item-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.profile-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #009688;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.post-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-author-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #313a46;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.post-author-name:hover {
+  color: #009688;
+  text-decoration: underline;
+}
+
+.post-timestamp {
+  font-size: 0.85rem;
+  color: #999999;
+}
+
+.post-image-container {
+  margin-top: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.post-image {
+  max-width: 100%;
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.post-content {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555555;
+  white-space: pre-wrap;
+}
+
+.empty-feed-message {
+  text-align: center;
+  padding: 4rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  color: #999999;
+  font-size: 1.1rem;
+}
+
+/* --- Media Queries for Responsiveness --- */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-actions {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .user-greeting {
+    display: none;
+  }
+
+  .btn-outline {
+    display: none;
+  }
+}
