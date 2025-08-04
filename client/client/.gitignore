@@ -25,7 +25,3 @@ dist-ssr
 
 # Environment variables
 .env
-
-# Production
-build
-dist
